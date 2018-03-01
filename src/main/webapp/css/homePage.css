@@ -1,0 +1,11 @@
+.filter {
+  float: left;
+  height: 100px;
+  padding-bottom: 15px;
+  padding-left: 15px
+}
+.products {
+  float: right;
+   padding-bottom: 15px;
+   padding-left: 15px;
+}

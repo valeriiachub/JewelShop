@@ -1,0 +1,15 @@
+<security>
+    <constraint>
+        <url-pattern>/makeOrder</url-pattern>
+        <role>1</role>
+    </constraint>
+    <constraint>
+        <url-pattern>/cart</url-pattern>
+        <role>1</role>
+    </constraint>
+    <constraint>
+        <url-pattern>/admin\/*</url-pattern>
+        <role>2</role>
+    </constraint>
+</security>
+

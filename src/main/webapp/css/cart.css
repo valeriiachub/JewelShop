@@ -1,0 +1,28 @@
+.container {
+  margin: auto;
+  width: 80%;
+}
+
+.badge {
+    background-color: #e8c223;
+    border-radius: 10px;
+    color: white;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1;
+    padding: 3px 7px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.products {
+   float: right;
+   padding-bottom: 15px;
+   padding-left: 15px;
+}
+
+.input {
+   width: 55px;
+   display: inline;
+}

@@ -1,0 +1,11 @@
+.products {
+    float: right;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+
+.input {
+    width: 55px;
+    display: inline;
+}
+

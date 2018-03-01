@@ -1,0 +1,52 @@
+<%@ taglib prefix="custom" tagdir="/WEB-INF/tags" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+
+<fmt:setLocale value="${pageContext.request.locale.language}"/>
+<fmt:setBundle basename="navbar"/>
+
+<fmt:message key="jewelryShop" var="jewelryShopText"/>
+<fmt:message key="homePage" var="homePageText"/>
+<fmt:message key="cart" var="cartText"/>
+<fmt:message key="sign" var="signInSignUpText"/>
+<fmt:message key="signIn" var="signInText"/>
+<fmt:message key="signUp" var="signUpText"/>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="#">${jewelryShopText}</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="/home">${homePageText}
+                        <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                        <a class="nav-link" href="/cart" id="cart">
+                                            <i class="fa fa-shopping-cart"></i> 
+                                            ${cartText}
+                                            <span class="badge cart" id="shoppingCartSize"></span>
+                                        </a>
+                            </li>
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                                    ${signInSignUpText}
+                            <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="/auth">${signInText}</a></li>
+                                        <li><a href="/register">${signUpText}</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><custom:chooseLanguage></custom:chooseLanguage></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
